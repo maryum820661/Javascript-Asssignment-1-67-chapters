@@ -1,0 +1,54 @@
+.images
+{
+display:flex;
+position:absolute;
+margin:60px;
+}
+
+
+#div1
+{
+
+    height:400;
+    width:400;
+    background-color:blue;
+    color:white;
+
+}
+
+#name,#email,#password
+{
+padding:15px;
+
+}
+#m
+{ font-size: 30px;
+margin:20px;
+
+}
+
+#n
+{
+
+    font-size: 30px;
+}
+
+input[type="submit"]
+{
+padding:20px;
+width:120px;
+}
+#more {
+    
+    display: none;
+
+}
+
+#myBtn
+{
+
+    margin-top:20px;
+    padding:10px;
+    background-color: rgb(87, 87, 94);
+    color:white;
+}
