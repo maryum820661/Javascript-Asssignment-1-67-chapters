@@ -4,11 +4,28 @@
 
 function infodisplay()
 {
+  var a= document.getElementById("f").childNodes;
+  console.log(a);
 
-let name=document.getElementById("name");
-let email=document.getElementById("email");
-document.write("The name of the person who signed up is "+name.value+'\n');
-document.write("The email of the student who signed up is"+email.value+'\n');
+  var val1=document.getElementById("name");
+  var p1=document.createElement("p");
+  var textnode1=document.createTextNode(val1.value);
+  p1.appendChild(textnode1);
+  var messages=document.getElementById("msg");
+  messages.appendChild(p1);
+  var val2=document.getElementById("email");
+  var p2=document.createElement('p');
+  var textnode2=document.createTextNode(val2.value);
+  p2.appendChild(textnode2);
+  messages.appendChild(p2);  
+ 
+  var val3=document.getElementById("h");
+  var textnode3=document.createTextNode('SIGN UP INFORMATION');
+  val3.append(textnode3);
+  val1.value="";
+  val2.value="";
+  var pass=document.getElementById("password");
+  pass.value="";
 }
 
 //2. Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look. When user clicks on “Read more” button, full detail of that particular item will be displayed. 
